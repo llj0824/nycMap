@@ -47,3 +47,7 @@ MANIFEST
 
 # Per-project virtualenvs
 .venv*/
+
+# Misc environment files
+.DS_Store
+docs/.DS_Store
