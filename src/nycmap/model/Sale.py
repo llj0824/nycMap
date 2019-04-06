@@ -1,13 +1,20 @@
 class Sale:
+    salePrice = None
+    saleDate = None
+    buildingCode = None
+    buildingClassPresent = None 
+    buildingClassAtSale = None
 
-    def __init__(self, salePrice, saleDate, buildingCode, buildingClassPresent, buildingClassAtSale):
+    def __init__(self):
+        pass
 
-        self.salePrice = salePrice
-        self.saleDate = saleDate
-        self.buildingCode = buildingCode
-        self.buildingClassPresent = buildingClassPresent
-        self.buildingClassAtSale = buildingClassAtSale
+    # def __init__(self, salePrice, saleDate, buildingCode, buildingClassPresent, buildingClassAtSale):
+    #     self.salePrice = salePrice
+    #     self.saleDate = saleDate
+    #     self.buildingCode = buildingCode
+    #     self.buildingClassPresent = buildingClassPresent
+    #     self.buildingClassAtSale = buildingClassAtSale
 
-    def printInfo():
+    def print(self):
         print("Sale price: %s, Sale date: %s, Building code: %s"
-          % (salePrice, saleDate, buildingCode))
+              % (self.salePrice, self.saleDate, self.buildingCode))
