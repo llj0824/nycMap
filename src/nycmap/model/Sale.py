@@ -4,6 +4,7 @@ class Sale:
     buildingCode = None
     buildingClassPresent = None 
     buildingClassAtSale = None
+    zipCode = None
 
     def __init__(self):
         pass
@@ -16,5 +17,5 @@ class Sale:
     #     self.buildingClassAtSale = buildingClassAtSale
 
     def print(self):
-        print("Sale price: %s, Sale date: %s, Building code: %s"
-              % (self.salePrice, self.saleDate, self.buildingCode))
+        print("Sale price: %s, Sale date: %s, Building code: %s, Zip code: %s"
+              % (self.salePrice, self.saleDate, self.buildingCode, self.zipCode))
