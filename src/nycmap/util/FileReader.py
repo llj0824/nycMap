@@ -12,5 +12,5 @@ def parseExcelFile():
     return df
 
 
-def getColumnNames():
-    return (salePrice, saleDate, buildingCategory, buildingClassPresent, buildingClassAtSale)
+# def getColumnNames():
+#     return (salePrice, saleDate, buildingCategory, buildingClassPresent, buildingClassAtSale)

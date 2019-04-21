@@ -1,7 +1,9 @@
+import statistics 
 
 class ZipCode:
 
   def __init__(self, sale, data):
+    #Initialize list of sale object with one sale object. Then appends to list.
     self.sales = [sale]
     self.zipCode = sale.zipCode
     self.data = data
@@ -19,5 +21,12 @@ class ZipCode:
     print("zipCode: %s. %s" % (self.zipCode, self.data))
     for sale in self.sales:
       sale.print()
+
+  def getMedianSalePrice(self):
+    salePrices = []
+    for s in self.sales:
+      salePrices.append(s.salePrice)
+    return statistics.median(salePrices)
+
 
     
